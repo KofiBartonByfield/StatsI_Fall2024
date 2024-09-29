@@ -45,16 +45,16 @@ y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98,
 ### 90% Confidence level ###
 
 # first define the point estimate (mean)
-y_mean <- mean(y) # Point estimate
+y_mean <- mean(y) # 98.44
 
 # next define the standard error
-y_err <- sd(y)/sqrt(length((y)))
+y_err <- sd(y)/sqrt(length((y))) # 2.6185...
 
 # calculate the degrees of freedom
-deg_free <- length(y) - 1
+deg_free <- length(y) - 1 # 24
 
 # as n<30 the clt cannot be used
-t_stat_1 <- qt(1 - 0.05, deg_free)
+t_stat_1 <- qt(1 - 0.05, deg_free) # 1.71088...
 
 # upper bound
 upper_90 <- y_mean + t_stat_1*y_err
