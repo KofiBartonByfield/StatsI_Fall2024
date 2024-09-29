@@ -74,7 +74,7 @@ cat("The 90% confidence interval for the average student IQ in the school is:\n"
 # calculate the t-statistic, mu0 = 100
 t_stat_2 <- (y_mean - 100) / y_err
 # t = -0.5957439 
-
+t_stat_2
 
 #STEP 4
 # calculate the p-value
