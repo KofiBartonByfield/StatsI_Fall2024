@@ -27,7 +27,7 @@ pkgTest <- function(pkg){
 lapply(c(),  pkgTest)
 
 # set working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd("C:/Users/15kof/OneDrive/Documents/Trintiy College/Applied Statistical Analysis 1/GitHub Folder/StatsI_Fall2024/tutorials/Tuesday/week3/")
 # check working directory
 getwd()
 
@@ -39,6 +39,7 @@ getwd()
 
 # Load data 
 df_not_tidy <- read.csv("movies.csv")
+#df_not_tidy <- read.table("https://raw.githubusercontent.com/ASDS-TCD/StatsI_Fall2024/main/datasets/movies.csv", header=F)
 
 # First step, look at data
 View(df_not_tidy)
